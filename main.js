@@ -31,7 +31,7 @@ class Button {
 
     draw() {
         // draw the circle to the user's screen
-
+        noLoop();
         push(); // loads a style to be applied
         fill(this.r, this.g, this.b, 100);
         stroke(219, 219, 219);
@@ -105,7 +105,6 @@ function setup() {
 
 function draw() {
     // accept user clicks here
-    noLoop();
     console.log("waiting for click...")
     if (mouseIsPressed === true) {
         console.log("mouse was clicked")
