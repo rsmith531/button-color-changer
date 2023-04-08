@@ -38,6 +38,7 @@ class Button {
         strokeWeight(this.diameter * 0.05);
         circle(this.x, this.y, this.diameter);
         pop(); // unloads the style
+		loop();
     }
 
     changeColor() {
