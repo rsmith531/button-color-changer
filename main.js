@@ -72,6 +72,12 @@ class Button {
     }
 }
 
+function mouseClicked() {
+    if (button.over(mouseX, mouseY)) {
+        button.changeColor();
+    }
+}
+
 let button; // create a global button
 
 function setup() {
@@ -104,12 +110,6 @@ function draw() {
     if (mouseIsPressed === true) {
         console.log("mouse was clicked")
         mouseClicked();
-    }
-}
-
-function mouseClicked() {
-    if (button.over(mouseX, mouseY)) {
-        button.changeColor();
     }
 }
 
