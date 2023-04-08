@@ -73,7 +73,8 @@ class Button {
     }
 }
 
-function mouseClicked() {
+function mousePressed() {
+    console.log("mouse was clicked");
     if (button.over(mouseX, mouseY)) {
         button.changeColor();
     }
@@ -106,11 +107,7 @@ function setup() {
 
 function draw() {
     // accept user clicks here
-    console.log("waiting for click...")
-    if (mouseIsPressed === true) {
-        console.log("mouse was clicked")
-        mouseClicked();
-    }
+    console.log("waiting for click...");
 }
 
 function randomizeColor() {
